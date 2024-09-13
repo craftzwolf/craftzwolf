@@ -1,0 +1,9 @@
+{
+    "files": [
+        "src/types/theme.d.ts"
+    ],
+  "references": [
+    { "path": "./tsconfig.app.json" },
+    { "path": "./tsconfig.node.json" }
+  ]
+}
