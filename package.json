@@ -3,6 +3,9 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
+  "license": "MIT",
+  "description": "craftzwolf (Meireles Fernando)",
+  "author": "@craftzwolf",
   "scripts": {
     "dev": "vite",
     "build": "tsc -b && vite build",
@@ -10,6 +13,9 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "author": "^1.0.0",
+    "description": "^0.0.4",
+    "license": "^1.0.3",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
     "react-switch": "^7.0.0"

@@ -1,6 +1,6 @@
 import GlobalStyle from './styles/global'
 import ViewPort from './components/ViewPort'
-import NavBar from './components/NavBar'
+import NavBar from './components/layout/nave/NavBar'
 
 import dark from './styles/theme/dark'
 import light from './styles/theme/light'
@@ -10,14 +10,14 @@ import { ThemeProvider } from 'styled-components'
 function App() {
   const [theme, setTheme] = usePersistedState ('theme', dark)
   const switchTheme = () => {
-    setTheme( theme.title == 'light' ? dark : light )
+    setTheme( theme.title == 'dark' ? light : dark )
   }
 
   return (
     <ThemeProvider theme = {theme}>
         <>
           <GlobalStyle />
-          <NavBar switchTheme = {switchTheme} />
+          <NavBar switchTheme = { switchTheme } />
           <ViewPort />
         </>
     </ThemeProvider>

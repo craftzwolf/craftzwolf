@@ -1,11 +1,18 @@
 import styled from 'styled-components'
 
 
-export const Navbar = styled.header`
-`
 
 export const Viewport = styled.section`
+    position: relative;
+    width: 100%;
 `
 
-export const Footer = styled.footer`
+export const Animate = styled.section`
+    position: relative;
+    width: 100%;
+`
+
+export const Routers = styled.section`
+    position: relative;
+    width: 100%;
 `

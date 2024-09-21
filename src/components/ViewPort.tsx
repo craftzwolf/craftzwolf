@@ -1,11 +1,15 @@
-import { Viewport } from './styled'
+import { Viewport, Animate, Routers } from './styled'
+import AniBox from './layout/anim/AniBox';
 
 
 
 const ViewPort: React.FC = () => {
     return (
-        <Viewport></Viewport>
+        <Viewport>
+            <Animate><AniBox /></Animate>
+            <Routers></Routers>
+        </Viewport>
     )
 }
 
-export default ViewPort
+export default ViewPort;

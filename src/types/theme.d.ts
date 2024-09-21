@@ -17,13 +17,22 @@ declare module 'styled-components' {
             icon_color_alt: string;
 
             theme_icon_color_def: string;
-            theme_icon_color_alt: string;
-            theme_back_color: string;
+            theme_back_color_def: string;
+            theme_back_color_alt: string;
+
+            anime_back_color: string;
+            anime_bord_color: string;
+            anime_text_color: string;
+            anime_shadow_color: string;
+            anime_dropshadow_color: string;
         }
 
-        display: {
+        displays: {
             lua_display: string;
             sol_display: string;
+
+            logo_dark_display: string;
+            logo_light_display: string;
         }
     }
 }
