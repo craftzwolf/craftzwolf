@@ -1,54 +1,66 @@
-# React + TypeScript + Vite
+# CRAFTZWOLF - Webpage Profissional
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
-Currently, two official plugins are available:
+Bem-vindo ao **CRAFTZWOLF**
+-------------------------
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Este é o repositório da minha página pessoal, onde compartilho meus projetos, músicas, imagens e novidades com o mundo. Meu objetivo é criar uma plataforma interativa e moderna que conecta meu trabalho e inspira as pessoas que o acompanham.
 
-## Expanding the ESLint configuration
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+A **API CRAFTZWOLF** 
+--------------------
 
-```js
-export default tseslint.config({
-  extends: [
-    // Remove ...tseslint.configs.recommended and replace with this
-    ...tseslint.configs.recommendedTypeChecked,
-    // Alternatively, use this for stricter rules
-    ...tseslint.configs.strictTypeChecked,
-    // Optionally, add this for stylistic rules
-    ...tseslint.configs.stylisticTypeChecked,
-  ],
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+É responsável por fornecer as funcionalidades necessárias para gerir conteúdo dinâmico na minha página, como notícias, imagens e músicas. 
+A página é construída com as mais recentes tecnologias como:
+ **React, TypeScript e Vite**
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+## 🚀 Tecnologias Utilizadas
+---------------------------------
 
-export default tseslint.config({
-  plugins: {
-    // Add the react-x and react-dom plugins
-    'react-x': reactX,
-    'react-dom': reactDom,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended typescript rules
-    ...reactX.configs['recommended-typescript'].rules,
-    ...reactDom.configs.recommended.rules,
-  },
-})
-```
+- **Node.js + Express**: Para o servidor e API.
+- **TypeScript**: Para tipagem estática e robustez.
+- **Styled-Components**: Para estilização da interface (usado principalmente em componentes de backend ou renderizações específicas).
+- **Google Drive API**: Para gerenciar imagens e músicas armazenadas na minha conta do Google Drive.
+
+
+## 🗂 Estrutura do Projeto
+------------------------------
+src/
+├── assets/           ← Arquivos estáticos (imagens, PDFs, etc.)
+├── components/       ← (opcional) Se usar componentes com styled-components
+├── controllers/      ← Lógica das rotas
+├── routes/           ← Definições das rotas da API
+├── server/           ← Configuração principal do Express
+├── services/         ← Integrações externas (ex: Google Drive, DB)
+├── styles/           ← Estilizações com styled-components
+├── type/             ← Tipagens TypeScript
+├── utils/            ← Funções auxiliares
+
+
+📝 Endpoints da API
+-----------------
+
+Aqui estão os principais endpoints da minha API:
+
+GET /noticias - Lista todas as notícias publicadas.
+
+POST /noticias - Cria uma nova notícia.
+
+GET /musica - Retorna a lista de músicas disponíveis.
+
+GET /imagens - Retorna as imagens publicadas na plataforma.
+
+
+
+👨‍💻 Sobre Mim
+-----------
+
+Olá! Eu sou [seu nome], o criador e desenvolvedor por trás do CRAFTZWOLF. A página reflete minha paixão por criar e compartilhar conteúdo inovador, seja no mundo da música, imagens ou projetos profissionais. Aqui, você encontrará tudo o que compartilho com o mundo, de uma maneira moderna e fácil de acessar.
+
+
+
+🛡 Licença
+---------
+
+Distribuído sob a licença MIT. Veja LICENSE para mais informações.
