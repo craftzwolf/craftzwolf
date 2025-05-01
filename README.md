@@ -64,3 +64,12 @@ Olá! Eu sou [seu nome], o criador e desenvolvedor por trás do CRAFTZWOLF. A p�
 ---------
 
 Distribuído sob a licença MIT. Veja LICENSE para mais informações.
+
+
+
+about(my name)
+works
+wallpapers
+posts
+uses
+source
