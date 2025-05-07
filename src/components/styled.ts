@@ -23,7 +23,4 @@ export const Routers = styled.section`
 
     display: flex;
     justify-content: space-around;
-
-
-    /* mobile css */
 `

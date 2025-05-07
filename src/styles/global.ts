@@ -35,6 +35,12 @@ export default createGlobalStyle`
         }
 
         button { cursor: pointer; }
+
+
+        // MY UTILS CLASSEs
+        .grid-col-span-2 { grid-column: span 2 }
+        .grid-row-span-2 { grid-column: span 2 }
+        .grid-row-span-3 { grid-row: span 3; }
     }
 
 `

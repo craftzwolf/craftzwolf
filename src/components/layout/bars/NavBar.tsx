@@ -54,6 +54,9 @@ const NavBar: React.FC <NavbarProps> = ({ switchTheme }) => {
         const gitIcon = document.getElementById('git')
         if(gitIcon) {gitIcon.style.display = display ? "none" : "inline-block"}
     }
+    const displayLink = () => {
+        setDisplay(!display)
+    }
 
     return (
         <Navbar>
@@ -77,7 +80,8 @@ const NavBar: React.FC <NavbarProps> = ({ switchTheme }) => {
             </div>
 
             <div className = "rside">
-                <button>discover</button>
+                <button className="discover">discover</button>
+                
                 <button className = {`switch ${animate ? 'animate' : ''}`} onClick = { switchAnimate }>
                     <Switch className = "theme"
                         onChange = { switchTheme }
@@ -85,14 +89,14 @@ const NavBar: React.FC <NavbarProps> = ({ switchTheme }) => {
                         checkedIcon = { <BsMoonFill className = 'icon_lua'/> }
                         uncheckedIcon = {<BsSunFill className = "icon_sol"/> }
                         handleDiameter = {2}
-                        width = {35}
-                        height = {35}
+                        width = {25}
+                        height = {25}
                     />
                 </button>
 
                 <button className = "bars" onClick = { () => buttonHumburguer ()}>
                     <div className = "actived"></div>
-                    <span><BsList className = "hamburger"/></span>
+                    <span onClick = { () => displayLink ()}><BsList className = "hamburger"/></span>
                 </button>
             </div>
 

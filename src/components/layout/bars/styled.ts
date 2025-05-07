@@ -18,15 +18,18 @@ export const Navbar = styled.header`
     display: flex;
     justify-content: space-between;
     align-items: center;
-    
+
     background: ${ props => props.theme.colors.back_color_blur };
     backdrop-filter: blur(15px);
     z-index: 999;
+
+    transition: all .3s;
 
 
     // Estilo padrão para desktop (largura maior que 1024px)
     @media screen and (min-width: 760px) {
 
+        // LEFT SIDE
         & .lside {
             height: 100%;
             display: flex;
@@ -92,6 +95,7 @@ export const Navbar = styled.header`
             }
         }
 
+        // RIGHT SIDE
         & .rside {
             display: flex;
             margin-right: 80px;
@@ -119,16 +123,16 @@ export const Navbar = styled.header`
                 & .icon_lua {
                     position: absolute;
                     display: ${ props => props.theme.displays.lua_display };
-                    top: 8px;
-                    left: 10px;
+                    top: 6px;
+                    left: 5px;
                     font-size: 18px;
                     color: ${ props => props.theme.colors.theme_icon_color_def };
                 }
                 & .icon_sol {
                     position: absolute;
                     display: ${ props => props.theme.displays.sol_display };
-                    top: 8px;
-                    left: -10px;
+                    top: 5px;
+                    left: -8px;
                     font-size: 18px;
                     color: ${ props => props.theme.colors.theme_icon_color_def };
                 }
@@ -184,7 +188,7 @@ export const Navbar = styled.header`
                 & .dark_brand { display: ${ props => props.theme.displays.logo_dark_display}; }
                 & .ligh_brand { display: ${ props => props.theme.displays.logo_light_display}; }
                 & .name {
-                    font-size: 14px;
+                    font-size: 12px;
                     font-weight: 700;
                     margin-left: 5px;
                     letter-spacing: 1.5px;
@@ -193,7 +197,9 @@ export const Navbar = styled.header`
                     color: ${ props => props.theme.colors.text_color_def };
                 }
             }
+        }
 
+        & .cside {
             & .links {
                 position: absolute;
                 top: 80px;
@@ -229,49 +235,64 @@ export const Navbar = styled.header`
         & .rside {
             display: flex;
 
+            & .discover {
+                display: none;
+            }
+
             & .switch {
                 position: relative;
-                width: 35px;
-                height: 35px;
-                margin-right: 10px;
-                overflow: hidden;
+                width: 25px;
+                height: 25px;
+
                 border: none;
                 cursor: pointer;
+                overflow: hidden;
+                margin-right: 10px;
                 border-radius: 5px;
                 background: ${ props => props.theme.colors.theme_back_color_def };
 
-
                 &:hover { background: ${ props => props.theme.colors.theme_back_color_alt }; }
                 &.animate { animation: ${ boxThemeAnimate } .5s ease-in-out; }
+
                 & .icon_lua {
                     position: absolute;
+                    top: 4px;
+                    left: 7px;
+                    font-size: 14px;
+                    font-weight: bold;
+                    text-align: center;
                     display: ${ props => props.theme.displays.lua_display };
-                    top: 8px;
-                    left: 10px;
-                    font-size: 18px;
                     color: ${ props => props.theme.colors.theme_icon_color_def };
+                    z-index: 1;
                 }
                 & .icon_sol {
                     position: absolute;
+                    top: 5px;
+                    left: -7px;
+                    font-size: 14px;
+                    font-weight: bold;
+                    text-align: center;
                     display: ${ props => props.theme.displays.sol_display };
-                    top: 8px;
-                    left: -10px;
-                    font-size: 18px;
                     color: ${ props => props.theme.colors.theme_icon_color_def };
                 }
             }
 
             & .bars {
                 position: relative;
-                width: 35px;
-                height: 35px;
+                width: 25px;
+                height: 25px;
                 border: none;
-                border-radius: 5px;
                 display: block;
+                border-radius: 5px;
 
                 & .hamburger {
-                    font-size: 18px;
+                    position: absolute;
+                    top: 50%;
+                    left: 50%;
+                    font-size: 14px;
                     font-weight: bold;
+                    text-align: center;
+                    transform: translate(-50%, -50%);
                 }
             }
         }
