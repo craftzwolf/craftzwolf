@@ -1,7 +1,18 @@
 import React from 'react';
 import { About } from './styled';
 import Pics from "../../assets/ME _01NOTBACK.png";
-import { BsBookshelf, BsController, BsFacebook, BsGithub, BsGlobe, BsHeartFill, BsInstagram, BsLaptop, BsModemFill, BsTree, BsTwitterX, BsXCircleFill } from 'react-icons/bs';
+import { 
+    BsBookshelf, 
+    BsController, 
+    BsFacebook, 
+    BsGithub, 
+    BsHeartFill, 
+    BsInstagram, 
+    BsLaptop, 
+    BsModemFill, 
+    BsTree, 
+    BsTwitterX 
+} from 'react-icons/bs';
 
 
 // IMPORTS LIKE COMPONENT IMAGE

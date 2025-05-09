@@ -298,3 +298,23 @@ export const Navbar = styled.header`
         }
     }
 `
+
+
+export const Footer = styled.footer`
+    display: flex;
+    font-size: 12px;
+    align-items: center;
+    justify-content: center;
+    margin: 2.5em 0 1.5em 0;
+    font-family: Poppins-def;
+
+    // Estilo para celulares (largura menor que 768px)
+    @media screen and (max-width: 767px) {
+        display: flex;
+        font-size: 8px;
+        align-items: center;
+        justify-content: center;
+        margin: 2.5em 0 1.5em 0;
+        font-family: Poppins-def;
+    }
+`
