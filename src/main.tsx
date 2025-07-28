@@ -9,4 +9,4 @@ const root = ReactDOM.createRoot(
 );
 
 // Renderizar o componente App dentro do root
-root.render( <React.StrictMode> <Router><App /></Router> </React.StrictMode> )
+root.render( <React.StrictMode> <Router  basename="/craftzwolf/"><App /></Router> </React.StrictMode> )
