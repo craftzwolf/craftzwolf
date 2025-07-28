@@ -1,8 +1,8 @@
 import React from 'react'
 import { Routes, Route, Navigate } from 'react-router-dom'
-import {
-    PageAbout,
-    PageWork,
+import { 
+    PageAbout, 
+    PageWork, 
     PageWallpaper,
     PagePosts,
     PageUses
