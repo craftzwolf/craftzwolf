@@ -292,11 +292,13 @@ Please change the parent <Route path="${X}"> to <Route path="${X==="/"?"*":`${X}
         z-index: 1;
 
         & .dark {
+            z-index: 999;
             width: 100%;
             height: 100%;
             display: ${n=>n.theme.displays.logo_dark_display};
         }
         & .glow {
+            z-index: 999;
             width: 100%;
             height: 100%;
             display: ${n=>n.theme.displays.logo_light_display};
