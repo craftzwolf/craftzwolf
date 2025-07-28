@@ -9,6 +9,8 @@ const IconLayout: React.FC = () => {
     const spanRef = useRef<HTMLSpanElement>(null);
     const bsIconsRef = useRef<HTMLDivElement>(null);
 
+    const logo = theme?.images?.logo_minpc;
+
     useEffect(() => {
         const currentUrl = window.location.href;
 
@@ -40,7 +42,9 @@ const IconLayout: React.FC = () => {
         <Icones>
             <div className="contain">
                 <span ref={spanRef}>
-                    <img src = { theme.images.logo_minpc } alt="Dark | Glow Logo" className = "minpc" />
+                    {logo && (
+                        <img src = { logo } alt="Dark | Glow Logo" className = "minpc" />
+                    )}
                 </span>
                 <div ref={bsIconsRef}>
                     <BsBriefcaseFill className = "icon bs briefcase" />

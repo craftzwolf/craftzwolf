@@ -30,6 +30,9 @@ declare module 'styled-components' {
         displays: {
             lua_display: string;
             sol_display: string;
+
+            logo_dark_display: string;
+            logo_light_display: string;
         }
 
         images: {

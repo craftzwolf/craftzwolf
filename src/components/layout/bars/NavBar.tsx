@@ -83,15 +83,17 @@ const NavBar: React.FC <NavbarProps> = ({ switchTheme }) => {
                 <button className="discover">discover</button>
                 
                 <button className = {`switch ${animate ? 'animate' : ''}`} onClick = { switchAnimate }>
-                    <Switch className = "theme"
-                        onChange = { switchTheme }
-                        checked = { title?.title == 'dark' }
-                        checkedIcon = { <BsMoonFill className = 'icon_lua'/> }
-                        uncheckedIcon = {<BsSunFill className = "icon_sol"/> }
-                        handleDiameter = {2}
-                        width = {25}
-                        height = {25}
-                    />
+                    {title && (
+                        <Switch
+                            onChange={switchTheme}
+                            checked={title.title === 'dark'}
+                            checkedIcon={<BsMoonFill className="icon_lua" />}
+                            uncheckedIcon={<BsSunFill className="icon_sol" />}
+                            handleDiameter={2}
+                            width={25}
+                            height={25}
+                        />
+                    )}
                 </button>
 
                 <button className = "bars" onClick = { () => buttonHumburguer ()}>

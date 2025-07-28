@@ -28,6 +28,9 @@ export default {
     displays: {
         lua_display: 'none',
         sol_display: 'block',
+
+        logo_dark_display: 'none',
+        logo_light_display: 'block'
     },
 
     images: {
