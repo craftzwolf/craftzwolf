@@ -8,6 +8,7 @@
     "dev": "vite",
     "lint": "eslint .",
     "build": "vite build",
+    "postbuild": "copy dist\\index.html dist\\404.html",
     "preview": "vite preview",
     "deploy": "gh-pages -d dist",
     "server": "ts-node --project tsconfig.node.json server/server.ts"
