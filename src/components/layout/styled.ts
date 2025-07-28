@@ -21,16 +21,30 @@ export const Icones  = styled.div`
         border-radius: 15%;
         opacity: .5;
         z-index: 1;
+        perspective: 1000px;
 
-        & .dark {
-            width: 100%;
-            height: 100%;
-            display: ${ props => props.theme.displays.logo_dark_display };
+        @keyframes spinx {
+            from { transform: rotateY(0deg); } 
+            to { transform: rotateY(360deg); }
         }
-        & .glow {
+
+        & span {
+            display: block;
             width: 100%;
             height: 100%;
-            display: ${ props => props.theme.displays.logo_light_display };
+            animation: spinx 3s linear infinite;
+            transform-style: preserve-3d;
+     
+            & .dark {
+                width: 100%;
+                height: 100%;
+                display: ${ props => props.theme.displays.logo_dark_display };
+            }
+            & .glow {
+                width: 100%;
+                height: 100%;
+                display: ${ props => props.theme.displays.logo_light_display };
+            }
         }
 
 
