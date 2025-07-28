@@ -14,13 +14,13 @@ import {
 const Router: React.FC = () => {
     return (
         <Routes>
-            <Route path = "/" element = {<PageAbout />} />
+            <Route path = "/craftzwolf" element = {<PageAbout />} />
             <Route path = "/works" element={<PageWork />} />
             <Route path = "/wallpaper" element={<PageWallpaper />} />
             <Route path = "/posts" element={<PagePosts />} />
 
             <Route path = "/uses" element={<PageUses />} />
-            <Route path='*' element={<Navigate to="/" />} />
+            <Route path='*' element={<Navigate to="/craftzwolf" />} />
 
         </Routes>
     )
