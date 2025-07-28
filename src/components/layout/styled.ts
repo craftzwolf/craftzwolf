@@ -55,15 +55,10 @@ export const Icones  = styled.div`
             opacity: .5;
             z-index: 1;
 
-            & .dark {
+            & .minpc {
                 width: 100%;
                 height: 100%;
-                display: ${ props => props.theme.displays.logo_dark_display };
-            }
-            & .glow {
-                width: 100%;
-                height: 100%;
-                display: ${ props => props.theme.displays.logo_light_display };
+                display: block;
             }
 
 
