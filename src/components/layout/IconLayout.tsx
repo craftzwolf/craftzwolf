@@ -13,12 +13,14 @@ const IconLayout: React.FC = () => {
 
     useEffect(() => {
         const currentUrl = window.location.href;
-        const isLocalhost = window.location.hostname === 'localhost';
 
         // Manipula a visibilidade do <span>
+        /*
         if (spanRef.current) {
             spanRef.current.style.display = isLocalhost ? 'block' : 'none';
         }
+        */
+
 
         // Manipula a visibilidade dos ícones com base na URL
         if (bsIconsRef.current) {
