@@ -1,3 +1,5 @@
+import MeLogoGlow from '../../assets/light.png'
+
 export default {
     title: 'dark',
 
@@ -26,8 +28,9 @@ export default {
     displays: {
         lua_display: 'none',
         sol_display: 'block',
+    },
 
-        logo_dark_display: 'none',
-        logo_light_display: 'block'
+    images: {
+        logo_minpc: MeLogoGlow,
     }
 }

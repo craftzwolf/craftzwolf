@@ -1,11 +1,11 @@
 import { Icones } from './styled';
+import { useTheme } from 'styled-components';
 import React, { useEffect, useRef } from 'react';
-import MeLogoDark from '../../assets/dark.png'
-import MeLogoGlow from '../../assets/light.png'
 import { BsBriefcaseFill, BsFileImageFill, BsFilePost } from 'react-icons/bs'
 
 const IconLayout: React.FC = () => {
 
+    const theme = useTheme();
     const spanRef = useRef<HTMLSpanElement>(null);
     const bsIconsRef = useRef<HTMLDivElement>(null);
 
@@ -40,8 +40,7 @@ const IconLayout: React.FC = () => {
         <Icones>
             <div className="contain">
                 <span ref={spanRef}>
-                    <img src = { MeLogoDark } alt="Dark Logo" className = "dark icon" />
-                    <img src = { MeLogoGlow } alt="Glow Logo" className = "glow icon" />
+                    <img src = { theme.images.logo_minpc } alt="Dark | Glow Logo" className = "minpc" />
                 </span>
                 <div ref={bsIconsRef}>
                     <BsBriefcaseFill className = "icon bs briefcase" />

@@ -22,17 +22,10 @@ export const Icones  = styled.div`
         opacity: .5;
         z-index: 1;
 
-        & .dark {
-            z-index: 999;
+        & .minpc {
             width: 100%;
             height: 100%;
-            display: ${ props => props.theme.displays.logo_dark_display };
-        }
-        & .glow {
-            z-index: 999;
-            width: 100%;
-            height: 100%;
-            display: ${ props => props.theme.displays.logo_light_display };
+            display: block;
         }
 
 

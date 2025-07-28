@@ -34,5 +34,9 @@ declare module 'styled-components' {
             logo_dark_display: string;
             logo_light_display: string;
         }
+
+        images: {
+            logo_minpc: string;
+        }
     }
 }
